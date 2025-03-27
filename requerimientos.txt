@@ -1,0 +1,11 @@
+Comando para crear un ambiente virtual
+
+-python -m venv venv
+-python .\venv\Scripts\activate
+
+
+Luego de tener neustro entorno virtual descargamos Dhjango en en el mismo 
+-pip install django
+-django-admin startproject nombre_proyecto .  (El punto hace referncia a que lo cree dentro  de la capeta principal)
+-python -m django --version (para ver la version)
+-py manage.py runserver
