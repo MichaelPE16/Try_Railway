@@ -1,1 +1,1 @@
-web: gunicorn app_railway.wsgi
+web: python manage.py collectstatic && gunicorn app_railway.wsgi
