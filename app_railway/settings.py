@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 import dj_database_url
 from dotenv import load_dotenv
-
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-gbaseysfm&yc^g-bz=7@d$qfigkz#qlyvr#+bybhh3p!t^)ulg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhosts','web-production-86aba.up.railway.app']
+ALLOWED_HOSTS = ['web-production-86aba.up.railway.app']
 
 
 # Application definition
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'app_railway.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-load_dotenv()
+
 DATABASES = {
     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
